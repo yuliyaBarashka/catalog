@@ -21,7 +21,8 @@
     <div class="row">
 
         <!-- Sidebar -->
-        <div class="col-2 bg-dark text-white min-vh-100 p-3">
+        <!-- Sidebar -->
+<div class="col-2 bg-dark text-white min-vh-100 p-3 d-flex flex-column">
 
     <h4 class="mb-4">Меню</h4>
 
@@ -47,33 +48,49 @@
 
     </ul>
 
-    <hr class="border-light">
+    <!-- mt-auto опускает блок вниз -->
+    <div class="mt-auto">
 
-    <div class="dropdown">
+        <hr class="border-light">
 
-        <button
-                class="btn btn-outline-light dropdown-toggle w-100"
-                type="button"
-                data-bs-toggle="dropdown"
-        >
-            Пользователь
-        </button>
+        <div class="dropdown">
 
-        <ul class="dropdown-menu w-100">
+            <button
+                    class="btn btn-outline-light dropdown-toggle w-100 d-flex align-items-center justify-content-center gap-2"
+                    type="button"
+                    data-bs-toggle="dropdown"
+            >
 
-            <li>
-                <a class="dropdown-item" href="#">
-                    Вход
-                </a>
-            </li>
+                <!-- Фото пользователя -->
+                <img
+                        src="https://via.placeholder.com/32"
+                        alt="user"
+                        class="rounded-circle"
+                        width="32"
+                        height="32"
+                >
 
-            <li>
-                <a class="dropdown-item" href="#">
-                    Выход
-                </a>
-            </li>
+                <span>Пользователь</span>
 
-        </ul>
+            </button>
+
+            <ul class="dropdown-menu w-100">
+
+                <li>
+                    <a class="dropdown-item" href="#">
+                        Профиль
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item" href="#">
+                        Выход
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
 
     </div>
 
